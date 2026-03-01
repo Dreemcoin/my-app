@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض تطبيقاتنا | Yor Apps Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #1e293b;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #1d4ed8);
+            color: white;
+            width: 100%;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 90%;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .app-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .app-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 22%;
+            background: #eee;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .app-title {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .app-desc {
+            font-size: 0.95rem;
+            color: #64748b;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 12px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .download-btn:hover {
+            background-color: #1d4ed8;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>تطبيقاتنا </h1>
+        <p>مرحباً بك في معرض تطبيقات الجوال الخاصة بنا، يمكنك تحميل الملفات مباشرة من هنا.</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="app-card">
+            <img src="https://github.com/Dreemcoin/my-app/blob/main/app_icon.png" alt="أيقونة التطبيق" class="app-icon">
+            <h2 class="app-title">اسم التطبيق الأول</h2>
+            <p class="app-desc">هذا التطبيق يساعدك على إدارة مهامك     التسويقية بشكل افضل .</p>
+            <a href="https://github.com/Dreemcoin/my-app/releases/download/untagged-90d1667186243c8db60b/app-arm64-v8a-release.apk" class="download-button download-btn" download>تحميل APK مباشر</a>
+        </div>
+
+        <div class="app-card">
+            <img src="https://github.com/Dreemcoin/my-app/blob/main/app_icon.png" alt="أيقونة التطبيق" class="app-icon">
+            <h2 class="app-title">اسم التطبيق الثاني</h2>
+            <p class="app-desc">  هذا التطبيق يساعدك على إدارة مهامك     التسويقية بشكل افضل       .</p>
+            <a href="https://github.com/Dreemcoin/my-app/releases/download/untagged-90d1667186243c8db60b/app-armeabi-v7a-release.apk" class="download-button download-btn" download>تحميل APK مباشر</a>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 جميع الحقوق محفوظة | تم التطوير بواسطة [ ماجلان]
+    </footer>
+
+</body>
+</html>
